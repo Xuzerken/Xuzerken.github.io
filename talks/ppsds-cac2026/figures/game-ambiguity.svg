@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" font-family="Inter, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#862633"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f5d8a"/>
+    </marker>
+  </defs>
+
+  <!-- panel titles -->
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#2d1b1e">what you wrote down</text>
+  <text x="390" y="34" font-size="20" font-weight="700" fill="#2d1b1e">what you must admit</text>
+
+  <!-- nominal table -->
+  <g transform="translate(25 70)">
+    <path d="M 30 110 L 200 55 L 310 130 L 140 190 Z" fill="#3f6b4f" opacity="0.16" stroke="#3f6b4f" stroke-width="2.5"/>
+    <circle cx="170" cy="122" r="8" fill="#c98b3a"/>
+    <ellipse cx="170" cy="122" rx="45" ry="28" fill="#c5a572" opacity="0.35" stroke="#a8874f" stroke-width="2.5"/>
+    <circle cx="170" cy="122" r="4" fill="#862633"/>
+    <text x="210" y="100" font-size="19" fill="#2f5d8a" font-weight="700">f̄, μ̄, Σ̄</text>
+    <text x="210" y="120" font-size="14" fill="#4a4a4a">the nominal model</text>
+    <text x="55" y="235" font-size="15" fill="#6b6b6b">one model — the one you would optimise for</text>
+  </g>
+
+  <!-- admitted set -->
+  <g transform="translate(390 70)">
+    <!-- base nominal table outline -->
+    <path d="M 30 112 L 200 57 L 310 132 L 140 192 Z" fill="#3f6b4f" opacity="0.10" stroke="#3f6b4f" stroke-width="1.6"/>
+
+    <!-- frame 2: the table can shift -->
+    <g class="f2 f3 f4">
+      <path d="M 30 112 L 200 57 L 310 132 L 140 192 Z" fill="none" stroke="#862633" stroke-width="2" stroke-dasharray="6 5" opacity="0.55"/>
+      <path d="M 48 100 L 218 45 L 328 120 L 158 180 Z" fill="none" stroke="#862633" stroke-width="2" stroke-dasharray="6 5" opacity="0.40"/>
+      <path d="M 12 124 L 182 69 L 292 144 L 122 204 Z" fill="none" stroke="#862633" stroke-width="2" stroke-dasharray="6 5" opacity="0.40"/>
+      <line x1="300" y1="105" x2="352" y2="88" stroke="#862633" stroke-width="2.8" marker-end="url(#arrow)"/>
+      <text x="300" y="66" font-size="20" fill="#862633" font-weight="700">γ₀</text>
+      <text x="300" y="82" font-size="13" fill="#862633">the table</text>
+    </g>
+
+    <!-- frame 3: the mean can shift -->
+    <g class="f3 f4">
+      <line x1="128" y1="133" x2="196" y2="117" stroke="#2f5d8a" stroke-width="2.6" marker-end="url(#arrow-blue)"/>
+      <circle cx="128" cy="133" r="5" fill="#2f5d8a"/>
+      <text x="205" y="108" font-size="18" fill="#2f5d8a" font-weight="700">γ₁</text>
+      <text x="205" y="93" font-size="13" fill="#2f5d8a">the mean kick</text>
+    </g>
+
+    <!-- frame 4: the spread can change -->
+    <g class="f4">
+      <ellipse cx="168" cy="125" rx="72" ry="44" fill="#c5a572" opacity="0.16" stroke="#a8874f" stroke-width="1.6" stroke-dasharray="4 4"/>
+      <ellipse cx="168" cy="125" rx="45" ry="28" fill="#c5a572" opacity="0.30" stroke="#a8874f" stroke-width="2.2"/>
+      <text x="236" y="188" font-size="18" fill="#a8874f" font-weight="700">γ₂ / γ₃</text>
+      <text x="236" y="204" font-size="13" fill="#a8874f">the spread</text>
+    </g>
+
+    <text x="45" y="243" font-size="15" fill="#6b6b6b">a set of models — what you cannot rule out</text>
+  </g>
+</svg>

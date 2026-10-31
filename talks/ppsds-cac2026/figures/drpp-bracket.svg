@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" font-family="Inter, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="up" viewBox="0 0 10 10" refX="5" refY="1" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 5 0 L 10 10 L 0 10 z" fill="#2f5d8a"/>
+    </marker>
+    <marker id="down" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 5 10 L 10 0 L 0 0 z" fill="#862633"/>
+    </marker>
+  </defs>
+
+  <!-- axis -->
+  <line x1="120" y1="40" x2="120" y2="360" stroke="#c9c2b6" stroke-width="2"/>
+  <text x="92" y="30" font-size="19" fill="#6b6b6b">value</text>
+
+  <!-- upper bound -->
+  <line x1="120" y1="80" x2="620" y2="80" stroke="#2f5d8a" stroke-width="3"/>
+  <text x="132" y="68" font-size="20" fill="#2f5d8a" font-weight="700">upper bound · shrink the ambiguity set</text>
+
+  <!-- true value -->
+  <line x1="120" y1="190" x2="620" y2="190" stroke="#2d1b1e" stroke-width="3"/>
+  <text x="132" y="178" font-size="20" fill="#2d1b1e" font-weight="700">V* — the true worst-case value</text>
+
+  <!-- lower bound -->
+  <line x1="120" y1="300" x2="620" y2="300" stroke="#862633" stroke-width="3"/>
+  <text x="132" y="288" font-size="20" fill="#862633" font-weight="700">lower bound · restrict the predictor</text>
+
+  <!-- gap arrow -->
+  <line x1="700" y1="88" x2="700" y2="182" stroke="#2f5d8a" stroke-width="2" marker-start="url(#up)" marker-end="url(#up)"/>
+  <line x1="700" y1="198" x2="700" y2="292" stroke="#862633" stroke-width="2" marker-start="url(#down)" marker-end="url(#down)"/>
+  <text x="712" y="142" font-size="19" fill="#2f5d8a" font-weight="700">Noise-DRPP</text>
+  <text x="712" y="252" font-size="19" fill="#862633" font-weight="700">Eig-DRPP</text>
+
+  <!-- gap bracket -->
+  <line x1="640" y1="80" x2="640" y2="300" stroke="#a8874f" stroke-width="1.4" stroke-dasharray="4 4"/>
+  <text x="655" y="390" font-size="16" fill="#a8874f" font-weight="700">the gap</text>
+  <line x1="120" y1="372" x2="620" y2="372" stroke="#e2ddd4" stroke-width="1"/>
+  <text x="132" y="398" font-size="16" fill="#6b6b6b">both bounds depend only on the ambiguity-set parameters</text>
+</svg>

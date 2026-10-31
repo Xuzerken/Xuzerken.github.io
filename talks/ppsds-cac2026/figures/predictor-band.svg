@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="900" height="260" fill="#ffffff"/>
+
+  <!-- the band between floor and ceiling -->
+  <rect x="72" y="42" width="808" height="148" fill="#f0ece5"/>
+
+  <!-- performance axis -->
+  <line x1="72" y1="224" x2="72" y2="30" stroke="#1a1a1a" stroke-width="2"/>
+  <polygon points="72,18 67,30 77,30" fill="#1a1a1a"/>
+  <text x="24" y="116" text-anchor="middle" font-size="19" fill="#4a4a4a" transform="rotate(-90 24 116)">prediction performance</text>
+
+  <!-- predictor axis -->
+  <line x1="72" y1="224" x2="888" y2="224" stroke="#1a1a1a" stroke-width="2"/>
+  <polygon points="890,224 878,219 878,229" fill="#1a1a1a"/>
+
+  <!-- ceiling / floor -->
+  <line x1="72" y1="42" x2="880" y2="42" stroke="#c41e3a" stroke-width="3"/>
+  <line x1="72" y1="190" x2="880" y2="190" stroke="#c41e3a" stroke-width="3" stroke-dasharray="10 6"/>
+
+  <text x="82" y="26" font-size="21" font-weight="700" fill="#a5182f">CEILING — least upper bound over all predictors</text>
+  <text x="82" y="210" font-size="21" font-weight="700" fill="#a5182f">FLOOR — worst-case you can still guarantee</text>
+
+  <!-- ticks -->
+  <g stroke="#1a1a1a" stroke-width="2">
+    <line x1="200" y1="224" x2="200" y2="232"/>
+    <line x1="390" y1="224" x2="390" y2="232"/>
+    <line x1="580" y1="224" x2="580" y2="232"/>
+    <line x1="770" y1="224" x2="770" y2="232"/>
+  </g>
+  <text x="878" y="218" text-anchor="end" font-size="19" font-style="italic" fill="#6b6b6b">one tick per predictor</text>
+
+  <!-- four probabilistic predictors, one per tick, at their score height -->
+  <g>
+    <path d="M172,190 C180,190 184,164 200,164 C216,164 220,190 228,190 Z" fill="#d9d4cc" stroke="#9a948a" stroke-width="1.4"/>
+    <circle cx="200" cy="177" r="5" fill="#6b6b6b"/>
+  </g>
+  <g>
+    <path d="M362,152 C370,152 374,126 390,126 C406,126 410,152 418,152 Z" fill="#c9a0a0" stroke="#a56666" stroke-width="1.4"/>
+    <circle cx="390" cy="139" r="5" fill="#862633"/>
+  </g>
+  <g>
+    <path d="M552,103 C560,103 564,77 580,77 C596,77 600,103 608,103 Z" fill="#9fb6c9" stroke="#6f8ea6" stroke-width="1.4"/>
+    <circle cx="580" cy="90" r="5" fill="#2f5d8a"/>
+  </g>
+  <g>
+    <path d="M742,68 C750,68 754,42 770,42 C786,42 790,68 798,68 Z" fill="#c5a572" stroke="#a8874f" stroke-width="1.4"/>
+    <circle cx="770" cy="55" r="5" fill="#a8874f"/>
+  </g>
+
+  <!-- tick labels -->
+  <g font-size="22" fill="#2d1b1e" text-anchor="middle">
+    <text x="200" y="252">nominal pp</text>
+    <text x="390" y="252">Eig-DRPP</text>
+    <text x="580" y="252">Noise-DRPP</text>
+    <text x="770" y="252">optimal pp</text>
+  </g>
+</svg>

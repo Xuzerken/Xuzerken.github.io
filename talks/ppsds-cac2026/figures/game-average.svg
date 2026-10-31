@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 130" width="300" height="130" font-family="Inter, Helvetica, Arial, sans-serif">
+  <rect width="300" height="130" fill="#ffffff"/>
+  <line x1="16" y1="22" x2="284" y2="22" stroke="#c41e3a" stroke-width="3"/>
+  <text x="16" y="14" font-size="14" font-weight="700" fill="#a5182f">p&#772; · ceiling</text>
+  <g fill="#3d7a5e">
+    <rect x="26" y="62" width="22" height="30" rx="2"/>
+    <rect x="60" y="54" width="22" height="38" rx="2"/>
+    <rect x="94" y="66" width="22" height="26" rx="2"/>
+    <rect x="128" y="48" width="22" height="44" rx="2"/>
+    <rect x="162" y="58" width="22" height="34" rx="2"/>
+    <rect x="196" y="44" width="22" height="48" rx="2"/>
+    <rect x="230" y="52" width="22" height="40" rx="2"/>
+    <rect x="264" y="46" width="22" height="46" rx="2"/>
+  </g>
+  <line x1="26" y1="70" x2="286" y2="70" stroke="#1f543f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="26" y="100" font-size="13" fill="#1f543f">average over 20 rounds</text>
+  <text x="150" y="124" text-anchor="middle" font-size="12.5" fill="#4a4a4a">In the game · average stays below</text>
+</svg>

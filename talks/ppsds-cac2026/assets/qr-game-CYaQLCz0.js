@@ -1,0 +1,1 @@
+var e=`/talks/ppsds-cac2026/figures/qr-game.svg`;export{e as t};

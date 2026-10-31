@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <style>
+      .t { fill: #2f3a40; }
+      .k { fill: #4a555c; font-size: 15px; }
+      .lbl { font-weight: 700; font-size: 26px; }
+      .ctr { fill: #7a1f2b; font-weight: 700; font-size: 34px; }
+      .ctr2 { fill: #7a1f2b; font-size: 20px; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- three low-saturation circles -->
+  <circle cx="295" cy="225" r="185" fill="#7fa7c0" fill-opacity="0.30" stroke="#5f8aa5" stroke-width="1.6"/>
+  <circle cx="525" cy="225" r="185" fill="#8fb894" fill-opacity="0.28" stroke="#6f9a75" stroke-width="1.6"/>
+  <circle cx="410" cy="415" r="185" fill="#d2bd86" fill-opacity="0.30" stroke="#b09a62" stroke-width="1.6"/>
+
+  <!-- A: prediction in control -->
+  <!-- 标签整体内移：x=168 时 “Prediction” 在圆的上沿会探出左边界 ~4px，
+       缩到幻灯片宽度后就是“字压着圆边”（用户 2026-10-21 指出）。 -->
+  <text class="t lbl" x="192" y="148" text-anchor="middle">Prediction</text>
+  <text class="t lbl" x="192" y="170" text-anchor="middle">in control</text>
+
+  <!-- B: probabilistic forecasting -->
+  <!-- 同理内移：x=632 时 “Probabilistic” 离右边界只剩 ~6px。 -->
+  <text class="t lbl" x="616" y="148" text-anchor="middle">Probabilistic</text>
+  <text class="t lbl" x="616" y="170" text-anchor="middle">forecasting</text>
+
+  <!-- C: distributionally robust optimisation -->
+  <!-- 整块上移 6px：关键字那行原来离下圆弧只有 ~23px，缩放后显得贴边。 -->
+  <text class="t lbl" x="410" y="496" text-anchor="middle">Distributionally</text>
+  <text class="t lbl" x="410" y="518" text-anchor="middle">robust optimisation</text>
+
+  <!-- centre: this work -->
+  <text class="ctr" x="410" y="297" text-anchor="middle">DRPP</text>
+  <text class="ctr2" x="410" y="318" text-anchor="middle">this work</text>
+</svg>

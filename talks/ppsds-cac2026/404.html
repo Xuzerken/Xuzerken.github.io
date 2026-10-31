@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Probabilistic Prediction of Stochastic Dynamical Systems - Slidev</title>
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/qr-game.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/game/obj-puck.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/game/obj-stacks.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/game/obj-score.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/web/weather-cone.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/web/drone-unsplash.jpg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/game/table-shear.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/game/table-rotation.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/game/table-damped.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/steps/003.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/steps/005.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/two-densities.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/dp-neighbours.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/eps-window.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/steps/015.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/trajectory-pdfs.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/lorenz-sensitivity.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/portraits/lorenz.jpg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/portraits/nobel.jpg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/portraits/song.jpg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/portraits/kleeman.jpg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/physrep-1166-page.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/reachable-set-tall.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/game-ceiling.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/game-average.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/game-convergence.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/web/quadcopter.jpg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/web/auv.jpg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/web/rover.jpg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/venn-related.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/game-ambiguity.gif">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/drpp-bracket.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/noise-drpp.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/eig-drpp.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/drpp-gap-callback.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/drpp-auto-worst-errorbar.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/drpp-reg-worst-errorbar.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/drpp-auto-worst-cr.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/drpp-reg-worst-cr.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/predictor-band.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/qr-home.svg">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/map.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/steps/001.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/steps/017.png">
+<link rel="preload" as="image" href="/talks/ppsds-cac2026/figures/steps/009.png">
+<link rel="icon" href="./favicon.png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta property="slidev:version" content="53.0.0">
+<meta name="description" content="&quot;How good can a probabilistic predictor be? Two results bracket the answer — a ceiling for the\nsystem you know, a floor for the system you don&#039;t — and one open-source implementation, ppsds, ships both.\n&quot;">
+<meta property="og:title" content="Probabilistic Prediction of Stochastic Dynamical Systems - Slidev">
+<meta property="og:description" content="&quot;How good can a probabilistic predictor be? Two results bracket the answer — a ceiling for the\nsystem you know, a floor for the system you don&#039;t — and one open-source implementation, ppsds, ships both.\n&quot;">  <script type="module" crossorigin src="/talks/ppsds-cac2026/assets/index-DGZ-JPWV.js"></script>
+  <link rel="modulepreload" crossorigin href="/talks/ppsds-cac2026/assets/rolldown-runtime-hePW80VL.js">
+  <link rel="modulepreload" crossorigin href="/talks/ppsds-cac2026/assets/modules/shiki-CtYzceCD.js">
+  <link rel="modulepreload" crossorigin href="/talks/ppsds-cac2026/assets/_plugin-vue_export-helper-BDNMzG2s.js">
+  <link rel="modulepreload" crossorigin href="/talks/ppsds-cac2026/assets/modules/vue-nY4DchGM.js">
+  <link rel="modulepreload" crossorigin href="/talks/ppsds-cac2026/assets/useNav-IuNWTOLK.js">
+  <link rel="modulepreload" crossorigin href="/talks/ppsds-cac2026/assets/slidev/dark-C67wDeVr.js">
+  <link rel="modulepreload" crossorigin href="/talks/ppsds-cac2026/assets/syncState-C23cc6xb.js">
+  <link rel="modulepreload" crossorigin href="/talks/ppsds-cac2026/assets/useDrawings-Dp2CI5pN.js">
+  <link rel="modulepreload" crossorigin href="/talks/ppsds-cac2026/assets/shared-CF94IWiv.js">
+  <link rel="stylesheet" crossorigin href="/talks/ppsds-cac2026/assets/modules/shiki-BrmBd2_v.css">
+  <link rel="stylesheet" crossorigin href="/talks/ppsds-cac2026/assets/index-Bz1AX_js.css">
+</head>
+<body>
+  <div id="app"></div>
+  <div id="mermaid-rendering-container"></div>
+  
+<link rel="stylesheet" href="./fonts/fonts.css" />
+  <script src="./js/track.js"></script>
+</body>
+</html>

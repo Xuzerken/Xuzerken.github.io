@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" font-family="Inter, Helvetica, Arial, sans-serif">
+  <!-- baseline -->
+  <line x1="60" y1="280" x2="850" y2="280" stroke="#cfc8bc" stroke-width="1.5"/>
+  <text x="840" y="304" font-size="20" fill="#6b6b6b">time k</text>
+
+  <!-- realized path -->
+  <polyline points="110,250 300,220 490,238 680,190 810,205" fill="none" stroke="#862633" stroke-width="3"/>
+  <g fill="#862633">
+    <circle cx="110" cy="250" r="5"/><circle cx="300" cy="220" r="5"/><circle cx="490" cy="238" r="5"/><circle cx="680" cy="190" r="5"/><circle cx="810" cy="205" r="5"/>
+  </g>
+  <text x="112" y="300" font-size="19" fill="#862633">x₁</text>
+  <text x="302" y="300" font-size="19" fill="#862633">x₂</text>
+  <text x="492" y="300" font-size="19" fill="#862633">x₃</text>
+  <text x="682" y="300" font-size="19" fill="#862633">x₄</text>
+
+  <!-- predictive distributions -->
+  <g fill="#c5a572" opacity="0.45" stroke="#a8874f" stroke-width="1.6">
+    <path d="M 240 220 C 260 220 265 150 300 150 C 335 150 340 220 360 220 Z"/>
+    <path d="M 430 238 C 450 238 455 168 490 168 C 525 168 530 238 550 238 Z"/>
+    <path d="M 620 190 C 640 190 645 120 680 120 C 715 120 720 190 740 190 Z"/>
+  </g>
+  <!-- small center ticks -->
+  <g stroke="#a8874f" stroke-width="1.2" stroke-dasharray="3 3">
+    <line x1="300" y1="150" x2="300" y2="220"/>
+    <line x1="490" y1="168" x2="490" y2="238"/>
+    <line x1="680" y1="120" x2="680" y2="190"/>
+  </g>
+  <text x="300" y="138" font-size="19" fill="#8a6d3b" text-anchor="middle">p̂(· | x₁)</text>
+  <text x="490" y="156" font-size="19" fill="#8a6d3b" text-anchor="middle">p̂(· | x₁:₂)</text>
+  <text x="680" y="108" font-size="19" fill="#8a6d3b" text-anchor="middle">p̂(· | x₁:₃)</text>
+
+  <text x="60" y="60" font-size="22" fill="#2d1b1e" font-weight="700">At each step: a conditional distribution</text>
+  <text x="60" y="82" font-size="19" fill="#6b6b6b">the red line is the one trajectory you actually observe</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 130" width="300" height="130" font-family="Inter, Helvetica, Arial, sans-serif">
+  <rect width="300" height="130" fill="#ffffff"/>
+  <line x1="16" y1="26" x2="284" y2="26" stroke="#c41e3a" stroke-width="3"/>
+  <text x="16" y="17" font-size="15" font-weight="700" fill="#a5182f">ceiling p&#772;</text>
+  <circle cx="62" cy="62" r="6" fill="#1f543f"/>
+  <circle cx="116" cy="76" r="6" fill="#1f543f"/>
+  <circle cx="170" cy="54" r="6" fill="#1f543f"/>
+  <circle cx="224" cy="72" r="6" fill="#1f543f"/>
+  <circle cx="268" cy="64" r="6" fill="#1f543f"/>
+  <line x1="40" y1="66" x2="280" y2="66" stroke="#1f543f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="40" y="94" font-size="13" fill="#1f543f">your running average</text>
+  <text x="150" y="124" text-anchor="middle" font-size="12.5" fill="#4a4a4a">In the game · nothing beats the ceiling</text>
+</svg>

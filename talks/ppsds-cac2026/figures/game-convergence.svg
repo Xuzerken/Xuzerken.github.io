@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 130" width="300" height="130" font-family="Inter, Helvetica, Arial, sans-serif">
+  <rect width="300" height="130" fill="#ffffff"/>
+  <polyline fill="none" stroke="#1f543f" stroke-width="2.5"
+    points="18,34 38,82 58,44 78,74 98,52 118,68 138,58 158,64 178,60 198,62 218,61 238,62 258,61 278,61"/>
+  <line x1="16" y1="61" x2="286" y2="61" stroke="#c41e3a" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="16" y="18" font-size="14" font-weight="700" fill="#1f543f">one run</text>
+  <text x="286" y="50" font-size="13" fill="#a5182f" text-anchor="end">mean</text>
+  <text x="16" y="100" font-size="13" fill="#1f543f">running average of the score</text>
+  <text x="150" y="124" text-anchor="middle" font-size="12.5" fill="#4a4a4a">In the game · one run, one mean</text>
+</svg>
