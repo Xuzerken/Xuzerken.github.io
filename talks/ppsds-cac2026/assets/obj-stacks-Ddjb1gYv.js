@@ -1,0 +1,1 @@
+var e=`/talks/ppsds-cac2026/figures/game/obj-stacks.png`;export{e as t};

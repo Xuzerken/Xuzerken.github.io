@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" height="340" font-family="Georgia, 'Times New Roman', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', STSong, SimSun, serif">
+  <rect width="900" height="340" fill="#ffffff"/>
+
+  <!-- ============================================================
+       本图是中文版：标签已按中文重写（decks/probabilistic-prediction-zh-15min
+       与长版**唯一有意分叉**的资产）。字体栈里显式补了中文字体 ——
+       SVG 里的 font-family 不继承页面的 CSS 变量，必须在这里自己写全，
+       否则在没装 Georgia 的系统上中文会掉到默认字体（甚至豆腐块）。
+
+       坐标轴：**纵轴是性能，横轴是不同的预测器**。
+       天花板/地板本来就是"性能"这条轴上的两条线，所以性能在纵轴，
+       横轴留给"是哪一个预测器"。
+       ============================================================ -->
+
+  <!-- 绘图区：ceiling 线在 y=70，floor 线在 y=200，中间的灰带是"你真正能操作的空间" -->
+  <rect x="120" y="70" width="740" height="130" fill="#f0ece5"/>
+
+  <!-- 纵轴（性能） -->
+  <line x1="120" y1="40" x2="120" y2="265" stroke="#1a1a1a" stroke-width="1.5"/>
+  <polygon points="120,30 115,42 125,42" fill="#1a1a1a"/>
+  <text x="46" y="152" text-anchor="middle" font-size="17" fill="#6b6b6b"
+        transform="rotate(-90 46 152)">概率预测的性能</text>
+
+  <!-- 横轴（不同的预测器） -->
+  <line x1="120" y1="265" x2="870" y2="265" stroke="#1a1a1a" stroke-width="1.5"/>
+  <polygon points="880,265 868,260 868,270" fill="#1a1a1a"/>
+  <text x="500" y="300" text-anchor="middle" font-size="17" fill="#6b6b6b">不同的预测器</text>
+
+  <!-- 横轴上的刻度：每一个刻度就是"一个预测器" -->
+  <g stroke="#b9b3a9" stroke-width="1.5">
+    <line x1="200" y1="265" x2="200" y2="272"/>
+    <line x1="310" y1="265" x2="310" y2="272"/>
+    <line x1="420" y1="265" x2="420" y2="272"/>
+    <line x1="530" y1="265" x2="530" y2="272"/>
+    <line x1="640" y1="265" x2="640" y2="272"/>
+    <line x1="750" y1="265" x2="750" y2="272"/>
+  </g>
+  <text x="475" y="256" text-anchor="middle" font-size="14" fill="#b9b3a9" font-style="italic">一个刻度 = 一个预测器</text>
+
+  <!-- 中间那条"你真正能操作的空间" -->
+  <text x="490" y="143" text-anchor="middle" font-size="19" fill="#6b6b6b" font-style="italic">你真正能操作的空间</text>
+
+  <!-- 天花板：任何预测器都无法超越的最小上界 -->
+  <line x1="120" y1="70" x2="860" y2="70" stroke="#c41e3a" stroke-width="3.5"/>
+  <text x="134" y="56" font-size="20" fill="#a5182f" font-weight="bold">天花板 —— 所有预测器的最小上界</text>
+
+  <!-- 地板：模型错时仍可保证的最坏情形性能 -->
+  <line x1="120" y1="200" x2="860" y2="200" stroke="#c41e3a" stroke-width="3.5" stroke-dasharray="10 6"/>
+  <text x="134" y="224" font-size="20" fill="#a5182f" font-weight="bold">地板 —— 模型错时仍能保证的最坏情形</text>
+</svg>

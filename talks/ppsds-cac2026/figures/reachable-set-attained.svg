@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect width="900" height="260" fill="#ffffff"/>
+  <line x1="60" y1="212" x2="700" y2="212" stroke="#e8e4de" stroke-width="1.5"/>
+  <line x1="60" y1="212" x2="60" y2="26" stroke="#e8e4de" stroke-width="1.5"/>
+  <text x="60" y="238" font-size="14" fill="#b9b3a9" font-style="italic">the space of predictive densities</text>
+  <path d="M288,58 C380,28 540,30 636,62 C726,92 754,150 694,190 C630,232 452,240 344,212 C248,187 214,132 236,96 C250,72 268,64 288,58 Z"
+        fill="#f0ece5" stroke="#b9b3a9" stroke-width="2"/>
+  <text x="330" y="152" text-anchor="middle" font-size="22" fill="#6b6b6b" font-weight="bold">R<tspan font-size="15" dy="4">ε</tspan></text>
+  <text x="440" y="182" text-anchor="middle" font-size="14" fill="#6b6b6b">what the uniform ε-box makes reachable</text>
+
+  <circle cx="600" cy="146" r="9" fill="#c41e3a"/>
+  <text x="622" y="142" font-size="20" fill="#a5182f" font-weight="bold">p = p̃<tspan font-size="14" dy="-7">*</tspan></text>
+  <text x="622" y="162" font-size="14" fill="#a5182f">the truth is reachable</text>
+  <text x="600" y="118" text-anchor="middle" font-size="16" fill="#a5182f" font-weight="bold">H(p ‖ p̃*) = H<tspan font-size="12" dy="3">d</tspan><tspan dy="-3">(p)</tspan></text>
+
+  <circle cx="252" cy="74" r="8" fill="#3b82f6"/>
+  <text x="236" y="62" text-anchor="end" font-size="20" fill="#1d4ed8" font-weight="bold">p<tspan font-size="14" dy="-7">*</tspan></text>
+  <text x="236" y="84" text-anchor="end" font-size="13" fill="#1d4ed8">the predictor that attains it</text>
+  <path d="M586,136 C500,92 350,68 264,72" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="7 5"/>
+  <polygon points="264,72 277,65 276,78" fill="#3b82f6"/>
+</svg>

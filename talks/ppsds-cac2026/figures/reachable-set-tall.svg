@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 470" width="620" height="470" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect width="620" height="470" fill="#ffffff"/>
+  <!-- p17 专用：**竖版**的可达集示意图（要和定理并排；横长条那版并排过去会小得看不清）。
+       ⚠️ 版式教训：标签**不要散在点旁边** —— 上一版 p / "the truth" / p̃* / "H(p‖p̃*)"
+       四个标签在右上角挤成一团（PNG 复核发现互相压字）。现在改成**左上角一个图例**，
+       图上只留三个符号本身；公式仍交给页面上的 KaTeX，图里不写。 -->
+  <circle cx="26" cy="34" r="7" fill="#c41e3a"/>
+  <text x="40" y="38" font-size="22" fill="#a5182f">p — the truth</text>
+  <circle cx="26" cy="64" r="7" fill="#1a1a1a"/>
+  <text x="40" y="70" font-size="22" fill="#1a1a1a">p̃* — closest reachable</text>
+  <circle cx="26" cy="94" r="7" fill="#3b82f6"/>
+  <text x="40" y="102" font-size="22" fill="#1d4ed8">p* — attains the ceiling</text>
+
+  <!-- R_ε：均匀 ε-box 够得着的那些 pdf；**故意不包含 p** -->
+  <path d="M196,178 C266,148 396,146 456,180 C516,214 528,286 486,338 C444,390 292,404 214,368 C144,336 130,250 162,204 C170,192 182,184 196,178 Z"
+        fill="#f0ece5" stroke="#b9b3a9" stroke-width="2"/>
+  <text x="318" y="266" text-anchor="middle" font-size="34" fill="#6b6b6b" font-weight="bold">R<tspan font-size="18" dy="5">ε</tspan></text>
+  <text x="318" y="300" text-anchor="middle" font-size="20" fill="#6b6b6b">reachable with an ε-box</text>
+
+  <circle cx="566" cy="196" r="9" fill="#c41e3a"/>
+  <text x="566" y="172" text-anchor="middle" font-size="29" fill="#a5182f" font-weight="bold">p</text>
+
+  <circle cx="452" cy="228" r="8" fill="#1a1a1a"/>
+  <text x="436" y="222" text-anchor="end" font-size="28" fill="#1a1a1a" font-weight="bold">p̃<tspan font-size="15" dy="-7">*</tspan></text>
+
+  <line x1="557" y1="199" x2="462" y2="225" stroke="#c41e3a" stroke-width="2.4" stroke-dasharray="8 5"/>
+  <text x="500" y="178" text-anchor="middle" font-size="22" fill="#a5182f" font-weight="bold">H(p ‖ p̃*)</text>
+
+  <!-- 第五轮：p* 放在黑点与红点之间、且**在球外**（用户要的集合直觉：
+       天花板落在“最接近的可达成员”与“真值”之间，而不是球外的另一侧）。 -->
+  <circle cx="518" cy="199" r="8" fill="#3b82f6"/>
+  <text x="530" y="232" text-anchor="start" font-size="28" fill="#1d4ed8" font-weight="bold">p<tspan font-size="15" dy="-7">*</tspan></text>
+  <path d="M462,224 C478,212 496,203 508,200" fill="none" stroke="#3b82f6" stroke-width="2.4" stroke-dasharray="8 5"/>
+  <polygon points="508,200 496,195 498,207" fill="#3b82f6"/>
+
+  <text x="16" y="452" font-size="19" fill="#b9b3a9" font-style="italic">the space of predictive densities</text>
+</svg>

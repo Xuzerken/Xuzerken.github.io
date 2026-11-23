@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 110" font-family="Inter, Helvetica, Arial, sans-serif">
+  <!-- two neighbouring datasets: one record differs -->
+  <g>
+    <rect x="4" y="10" width="58" height="58" rx="5" fill="#fffdfa" stroke="#c9c2b6" stroke-width="1.5"/>
+    <g fill="#8a8378">
+      <circle cx="19" cy="25" r="3.6"/><circle cx="33" cy="25" r="3.6"/><circle cx="47" cy="25" r="3.6"/>
+      <circle cx="19" cy="39" r="3.6"/><circle cx="47" cy="39" r="3.6"/>
+      <circle cx="19" cy="53" r="3.6"/><circle cx="33" cy="53" r="3.6"/><circle cx="47" cy="53" r="3.6"/>
+    </g>
+    <circle cx="33" cy="39" r="5" fill="#2f5d8a"/>
+    <text x="33" y="86" text-anchor="middle" font-size="16" font-weight="700" fill="#2d1b1e">D</text>
+  </g>
+
+  <g transform="translate(76,0)">
+    <rect x="4" y="10" width="58" height="58" rx="5" fill="#fffdfa" stroke="#c9c2b6" stroke-width="1.5"/>
+    <g fill="#8a8378">
+      <circle cx="19" cy="25" r="3.6"/><circle cx="33" cy="25" r="3.6"/><circle cx="47" cy="25" r="3.6"/>
+      <circle cx="19" cy="39" r="3.6"/><circle cx="47" cy="39" r="3.6"/>
+      <circle cx="19" cy="53" r="3.6"/><circle cx="33" cy="53" r="3.6"/><circle cx="47" cy="53" r="3.6"/>
+    </g>
+    <circle cx="33" cy="39" r="5" fill="none" stroke="#2f5d8a" stroke-width="2.2"/>
+    <text x="33" y="86" text-anchor="middle" font-size="16" font-weight="700" fill="#2d1b1e">D&#8242;</text>
+  </g>
+
+  <!-- score gap bracket -->
+  <path d="M 158 14 L 152 14 L 152 78 L 158 78" fill="none" stroke="#2f5d8a" stroke-width="2"/>
+  <text x="168" y="40" font-size="18" font-weight="700" fill="#2f5d8a">|&#916; score| &#8804; &#949;</text>
+  <text x="168" y="62" font-size="14" fill="#4a4a4a">one record apart</text>
+</svg>

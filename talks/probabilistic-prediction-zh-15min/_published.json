@@ -1,0 +1,8 @@
+{
+  "deck": "probabilistic-prediction-zh-15min",
+  "slidesSha256_16": "73914cf425b2ac85",
+  "sourceCommit": "b0bce50",
+  "builtFrom": "projects/talks/build/probabilistic-prediction-zh-15min-pub",
+  "publishedTo": "projects/academic-homepage/site/public/talks/probabilistic-prediction-zh-15min",
+  "notesExcluded": true
+}

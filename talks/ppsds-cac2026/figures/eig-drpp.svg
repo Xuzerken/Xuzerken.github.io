@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" font-family="Inter, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="eig-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#862633"/>
+    </marker>
+  </defs>
+
+  <!-- shared principal axes -->
+  <g stroke="#b8b0a2" stroke-width="1.2" stroke-dasharray="5 5">
+    <line x1="120" y1="285" x2="450" y2="95"/>
+    <line x1="130" y1="95" x2="440" y2="285"/>
+  </g>
+
+  <!-- nominal ellipse (dashed) -->
+  <ellipse cx="280" cy="190" rx="95" ry="45" transform="rotate(-33 280 190)" fill="none" stroke="#7a7a7a" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="170" y="130" font-size="16" fill="#6b6b6b">nominal</text>
+
+  <!-- Eig ellipse (solid, same axes, different widths) -->
+  <ellipse cx="280" cy="190" rx="125" ry="30" transform="rotate(-33 280 190)" fill="#862633" opacity="0.12" stroke="#862633" stroke-width="2.6"/>
+  <text x="390" y="250" font-size="16" fill="#862633" font-weight="700">Eig-DRPP</text>
+
+  <!-- worst-case shift -->
+  <line x1="280" y1="190" x2="345" y2="160" stroke="#862633" stroke-width="2.6" marker-end="url(#eig-arrow)"/>
+  <circle cx="280" cy="190" r="5" fill="#2d1b1e"/>
+  <text x="350" y="150" font-size="16" fill="#862633">worst-case shift</text>
+
+  <!-- labels -->
+  <text x="30" y="45" font-size="20" font-weight="700" fill="#2d1b1e">same axes Q_k</text>
+  <text x="30" y="70" font-size="16" fill="#4a4a4a">only the widths λ* change</text>
+</svg>

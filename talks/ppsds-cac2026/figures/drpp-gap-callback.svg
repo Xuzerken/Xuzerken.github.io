@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 210" font-family="Inter, Helvetica, Arial, sans-serif">
+  <line x1="30" y1="150" x2="30" y2="25" stroke="#cfc8bc" stroke-width="1.6"/>
+  <text x="12" y="18" font-size="14" fill="#6b6b6b">value</text>
+
+  <line x1="30" y1="45" x2="300" y2="45" stroke="#2f5d8a" stroke-width="3"/>
+  <text x="42" y="36" font-size="17" fill="#2f5d8a" font-weight="700">upper bound</text>
+
+  <line x1="30" y1="100" x2="300" y2="100" stroke="#2d1b1e" stroke-width="3"/>
+  <text x="42" y="91" font-size="17" fill="#2d1b1e" font-weight="700">V*</text>
+
+  <line x1="30" y1="155" x2="300" y2="155" stroke="#862633" stroke-width="3"/>
+  <text x="42" y="177" font-size="17" fill="#862633" font-weight="700">lower bound</text>
+
+  <!-- gap bracket -->
+  <line x1="320" y1="45" x2="320" y2="155" stroke="#a8874f" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <line x1="308" y1="45" x2="332" y2="45" stroke="#a8874f" stroke-width="1.6"/>
+  <line x1="308" y1="155" x2="332" y2="155" stroke="#a8874f" stroke-width="1.6"/>
+  <text x="344" y="94" font-size="18" fill="#a8874f" font-weight="700">gap</text>
+  <text x="344" y="115" font-size="14" fill="#a8874f">≤ upper − lower</text>
+  <text x="344" y="134" font-size="14" fill="#a8874f">offline</text>
+</svg>

@@ -1,0 +1,96 @@
+/* Self-hosted webfonts for the ppsds decks.
+ *
+ * Loaded from index.html with a document-relative path (`./fonts/fonts.css`),
+ * so it stays correct under `/talks/<slug>/` without relying on Vite's base
+ * rewriting inside the bundled CSS.
+ *
+ * Both families are variable fonts (weight axis).  We ship the Latin and Greek
+ * subsets separately: the deck uses `ε` in plain text (not only inside KaTeX),
+ * and the Latin subset does not contain Greek glyphs.
+ * Licences: SIL OFL 1.1 (see OFL-*.txt).
+ */
+
+/* ---- Source Serif 4 · Latin ---- */
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("./SourceSerif4-Variable.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: block;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("./SourceSerif4-Italic-Variable.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: block;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ---- Source Serif 4 · Greek ---- */
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("./SourceSerif4-Greek-Variable.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: block;
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("./SourceSerif4-Italic-Greek-Variable.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: block;
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+/* ---- Inter · Latin ---- */
+@font-face {
+  font-family: "Inter";
+  src: url("./Inter-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: block;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./Inter-Italic-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: block;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ---- Inter · Greek ---- */
+@font-face {
+  font-family: "Inter";
+  src: url("./Inter-Greek-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: block;
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./Inter-Italic-Greek-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: block;
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+/* Override the scholarly theme's "traditional" stack.  The theme sets these
+ * on [data-font-theme="traditional"]; :root[data-font-theme=...] has higher
+ * specificity, so this wins without fighting the theme's load order. */
+:root[data-font-theme="traditional"] {
+  --scholarly-font-serif: "Source Serif 4", "EB Garamond", Georgia, serif !important;
+  --scholarly-font-sans: "Inter", "Helvetica Neue", Arial, system-ui, sans-serif !important;
+  --scholarly-font-body: var(--scholarly-font-serif) !important;
+}
